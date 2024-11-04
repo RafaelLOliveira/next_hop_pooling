@@ -12,16 +12,16 @@ from os import environ
 
 # apikey = environ.get('IBMCLOUD_API_KEY')
 
-apikey = <APIKEY>
+apikey = "APIKEY"
 
 authenticator = IAMAuthenticator(apikey)
 service = VpcV1(authenticator=authenticator)
 service.set_service_url('https://br-sao.iaas.cloud.ibm.com/v1')
 
 # variáveis de entrada
-lb_id = "r042-7c84dec4-074d-4e3f-b349-1cfa621bf142"
-vpc_id="r042-6b497e29-403d-4e01-a4c0-889f229d2cef"
-routing_table_id="r042-b2787c7a-4d4c-4884-ade3-a16dcfa37fd2"
+lb_id = "NLB ID"
+vpc_id = "VPC ID"
+routing_table_id = "ROUTING TABLE ID"
 
 # pega IPs primário e secundário do NLB
 def getNLBIps():
